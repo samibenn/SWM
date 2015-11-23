@@ -2,62 +2,163 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-	var parentPadding = parseInt(jQuery('.box').parent().css("padding"))
-	$('.box').each(function(i) {
-		$(this).css('padding', parentPadding + i);
-	});
-	$(".box").each(function() {
-        var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
-         $(this).css("background-color", hue);
-    });
-	
-});
-</script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Nested Divs</title>
 </head>
 
 <body>
 
 <style>
+html {
+	box-sizing: border-box;
+}
+
 body {
-	margin: 0;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.a{
+	padding: 1px;
+	background: #FF0000;
+}
+.b{
+	padding: 2px;
+	background: #;
+}
+.c{
+	padding: 3px;
+	background: #ec8313; 
+}
+.d{
+	padding: 4px;
+	background: #ecac13;
+}
+.e{
+	padding: 5px;
+	background: #ece413;
+}
+.f{
+	padding: 6px;
+	background: #92ec13;
+}
+.g{
+	padding: 7px;
+	background: #3bec13;
+}
+.h{
+	padding: 8px;
+	background: #13ec2c;
+}
+.i{
+	padding: 9px;
+	background: #13ec7e;
+}
+.j{
 	padding: 10px;
+	background: #13ecc6;
+}
+.k{
+	padding: 11px;
+	background: #13c6ec;
+}
+.l{
+	padding: 12px;
+	background: #13a2ec;
+}
+.m{
+	padding: 13px;
+	background: #1374ec;
+}
+.n{
+	padding: 14px;
+	background: #1346ec;
+}
+.o{
+	padding: 15px;
+	background: #3613ec;
+}
+.p{
+	padding: 16px;
+	background: #6413ec;
+}
+.q{
+	padding: 17px;
+	background: #9213ec;
+}
+.r{
+	padding: 18px;
+	background: #c013ec;
+}
+.s{
+	padding: 19px;
+	background: #e913ec;
+}
+.t{
+	padding: 20px;
+	background: #ec13bb;
+}
+.u{
+	padding: 21px;
+	background: #ec1374;
+}
+.v{
+	padding: 22px;
+	background: #ec1355;
+}
+.w{
+	padding: 23px;
+	background: #ec1313;
+}
+.x{
+	padding: 24px;
+	background: #fff;
+}
+.y{
+	padding: 25px;
+	background: #7F7F7F;
+}
+.z{
+	padding: 26px;
+	background: black;
 }
 
 </style>
-</head>
 
 <body>
-<div class="box"> 
-    <div class="box"> 
-        <div class="box"> 
-            <div class="box"> 
-                <div class="box"> 
-                    <div class="box"> 
-                        <div class="box"> 
-                            <div class="box"> 
-                                <div class="box"> 
-                                    <div class="box"> 
-                                        <div class="box"> 
-                                            <div class="box"> 
-                                                <div class="box"> 
-                                                    <div class="box"> 
-                                                        <div class="box"> 
-                                                            <div class="box"> 
-                                                                <div class="box"> 
-                                                                    <div class="box"> 
-                                                                        <div class="box"> 
-                                                                            <div class="box"> 
-                                                                                <div class="box"> 
-                                                                                    <div class="box"> 
-                                                                                        <div class="box"> 
-                                                                                            <div class="box"> 
-                                                                                                <div class="box"> </div>
+
+<h1> Nested Divs </h1>
+
+<div class="container"> 
+	<div class="a"> 
+        <div class="b"> 
+            <div class="c"> 
+                <div class="d"> 
+                    <div class="e"> 
+                        <div class="f"> 
+                            <div class="g"> 
+                                <div class="h"> 
+                                    <div class="i"> 
+                                        <div class="j"> 
+                                            <div class="k"> 
+                                                <div class="l"> 
+                                                    <div class="m"> 
+                                                        <div class="n"> 
+                                                            <div class="o"> 
+                                                                <div class="p"> 
+                                                                    <div class="q"> 
+                                                                        <div class="r"> 
+                                                                            <div class="s"> 
+                                                                                <div class="t"> 
+                                                                                    <div class="u"> 
+                                                                                        <div class="v"> 
+                                                                                            <div class="w"> 
+                                                                                                <div class="x">
+                                                                                                	<div class="y">
+                                                                                                    	<div class="z">
+                                                                                                        </div>
+                                                                                                	</div>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>My Form </h1>
+    
+    <form action="./index.html" method="get">
+      
+      <fieldset>
+        <legend>Tell me about yourself </legend>
+        
+        <label for="sex"> Are you male or female? </label>
+        	<input type="radio" name="sex" value="male" checked>Male<br>
+			<input type="radio" name="sex" value="female">Female
+
+        <label for="favorite_food">What is your favorite Celebrity?</label>
+        <input type="text" name="food" value="" placeholder="enter your favorite celebrity" id="favorite_food" />
+      
+        <label for="favorite_animal">What is your favorite animal?</label>
+        <select name="animal" id="favorite_animal">
+          <option> Cat </option>
+          <option> Dog </option>
+          <option> Turtle </option>
+          <option> Fish </option>
+          <option> Horse </option>
+          <option> Hamster </option>
+          <option> Frog </option>
+          <option> Elephant </option>
+          <option> Tiger </option>
+          <option> LIon </option>
+          <option> other </option>
+	   </select>
+      
+        <label for="how_much">How much do you weigh?</label>
+        <input type="range" name="how_much" value="" id="how_much" min="0" max="400" step="5" oninput="this.nextElementSibling.innerHTML = 'Number = ' + this.value" />
+        <span>Number:</span>
+        
+        <label for="favorite_color">What is your favorite color?</label>
+        <input type="color" name="color" value="#ff0000" placeholder="enter your favorite color" id="favorite_color" /> <br>
+        
+      <label for="sports"> What are your favorite sports? (check all that apply) </label>
+      	<input type="checkbox" name="sport1" value="soccer">Soccer <br>
+		<input type="checkbox" name="sport2" value="foortball"> Football <br>
+		<input type="checkbox" name="sport3" value="basketball"> Basketball <br> 
+		<input type="checkbox" name="sport4" value="tennis"> Tennis <br>
+		<input type="checkbox" name="sport5" value="fieldhockey"> Field Hockey <br>
+		<input type="checkbox" name="sport6" value="baseball"> Baseball <br>
+		<input type="checkbox" name="sport7" value="hockey"> Hockey <br> 
+		<input type="checkbox" name="sport8" value="boxing"> Boxing <br>
+      
+        <label for="birthday">When is your birthday?</label>
+        <input type="date" name="birthday" id="birthday" value="" />
+      
+        <label for="about">Tell us about more about your favorite things.</label>
+        <textarea id="about" name="about" value="" placeholder="hmmm?">     </textarea>
+      </fieldset>
+      
+     
+      
+      <button type="submit">send this stuff</button>
+      <button type="reset">reset the form</button>
+    </form>
+    
+    <script type="text/javascript">
+      var form = document.querySelector('form');
+      form.addEventListener('submit', function (evt) {
+        evt.preventDefault();
+        
+        document.body.style.backgroundColor = this.color.value;
+        
+        console.log('My favorite animal is', this.animal.value);
+      }, false);
+      
+    </script>
+  </body>
+</html>

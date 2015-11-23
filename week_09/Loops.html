@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Loop Examples</title>
+	<style type="text/css" media="screen">
+	body {
+		font-family: helvetica;
+	}
+	.console {
+		min-height: 5em;
+		font-family: helvetica;
+		padding:1em;
+	}
+	.console > span {
+		display:block;
+		padding:0.25em;
+		border-bottom:1px dotted rgba(0,0,0,0.1);
+	}
+	</style>
+  </head>
+  
+  <body>
+    <h1>Singers</h1>
+	<pre class="console"></pre>
+    <script type="text/javascript">
+	
+	function printString(string_argument) {
+		var fake_console = document.querySelector('.console');
+		// an html span element
+		var span = document.createElement('span');
+		span.innerHTML = string_argument;
+		
+		fake_console.appendChild(span);
+	}
+	
+	
+	var num   = 0;
+	var limit = 100;
+	
+	while (num < limit ) {
+		num = num + 2;
+		console.log(num);
+	}
+	
+	var singers = ["Beyonce", "Prince", "Demi Levato", "Adele", "Sam Smith", "Jennifer Hudson", "Beatles", "Rolling Stones", "Justin Timberlake", "Robin Thicke"];
+	
+	printString('the length of my things array: ' + singers.length);
+	
+	printString('---- Singers in a WHILE----');
+	
+	var i = 0;
+	while (singers[i]) {
+		printString(singers[i]);
+		i++
+	}
+	
+	
+	printString('---- Singers FOR you! ----');
+	for (var i = 0; i < singers.length; i++) {
+		if (singers[i] == 'Beyonce') {
+			continue;
+		} else if (hobbits[i] == 'Adele'){
+			printString('<span>I</span> love Adele!');
+		} else {
+		 	printString(singers[i]);
+		}
+	}
+	
+	
+	printString('---- CALLING all singers ----');
+	var good_singers = function (singer_name, index) {
+		if (singer_name == 'Awesomeness') {
+			return;
+		} else if (singer_name == 'Prince'){
+			printString('Symbol');
+		} else {
+		 	printString(singer_name);
+		}
+	}
+	
+	singers.forEach(good_singers);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  	font-family: Helvetica;
+  	background: black;
+	color: white;
+}
+
+h1{
+  font-weight: 200;
+}
+
+label{
+  display: block; 
+  text-decoration: underline;
+  margin-top: 2em;
+}
+
+input:checkbox{
+	display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+
+}
+
+input {
+  border: 2px solid #F90ED4;
+}
+
+input:focus {
+  border-color: #F90ED4;
+}
+
+input:valid {
+  border-color: #F90ED4;
+}
+
+input:invalid {
+  border-color:red;
+}

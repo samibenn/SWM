@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week 8 - Javascript</title>
+<style>
+	body {
+		text-align: center;
+	}
+
+	h1 {
+		Color: red;
+	}
+</style>
+</head>
+
+
+<body>
+	
+    <h1>Week 8 JavaScript</h1>
+    
+   <h2> Part A </h2>
+<script type="text/javascript">
+
+    	
+
+		var num = prompt("Insert a Number"); 
+			
+			if (num != null){
+
+		var ans = num * 7;
+
+		var result = ans * 1443;
+
+		alert(result);
+		
+		};
+
+
+
+	
+
+
+		function pChange(){
+			document.getElementById("main").innerHTML = "Changed";
+		};
+
+		var q1 = prompt("Enter a noun"); 
+		var q2 = prompt("Enter a verb");
+		var q3 = prompt("Enter a name");
+		var q4 = prompt("Enter an adjective");
+		var q5 = prompt("Enter a funny word");
+			
+		var ans = q1 + " " + q2 + " " + q3 + " "  + q4 + " " + q5;
+			
+		alert(ans);
+
+</script>
+
+    <h2>Part B</h2>
+
+    <p> On a scale of 1 - 10, how tired are you? 
+	    <br><input id="num" type="number">
+	    <button type="button" onclick="tired()">Submit</button>
+	    <p id="display"></p>
+	</p>
+
+	<p id="sleepList"></p>
+
+
+
+    
+<script type= "text/javascript">
+
+		//Part B
+
+		document.write(1 + 1);
+
+
+		var sleep = ["Bright Eyed and Bushey Tailed", "I need coffee", "My eyes are Heavy", "Nap Time", "I could sleep for days"]; //0-4
+			document.getElementById("sleepList").innerHTML = sleep[4];
+
+
+
+		function tired(){
+			var x, text;
+				x = document.getElementById("num").value;
+
+				if (isNaN(x) || x<6) {
+					text = "Get some rest!";
+				}
+
+				if (isNaN(x) || x>5) {
+					text = "That sucks";
+				}
+
+				if (isNaN(x) || x < 1 || x > 10) {
+					text = "Input not valid";
+				} 
+
+
+				document.getElementById("display").innerHTML = text;
+		};
+
+	</script>
+    
+</body>
+</html>
